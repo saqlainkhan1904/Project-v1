@@ -1,4 +1,5 @@
 {
+  "homepage":"https://github.com/saqlainkhan1904/Project-v1.git",
   "name": "realtime-editor",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +22,8 @@
   },
   "scripts": {
     "start:front": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "npm run build && npm run server:prod",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
